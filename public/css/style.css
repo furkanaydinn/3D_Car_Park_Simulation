@@ -1,0 +1,28 @@
+/* Genel sıfırlama veya temel stiller buraya eklenebilir */
+body {
+    font-family: sans-serif;
+}
+
+/* Gelecekteki UI elemanları için bir konteyner (örnek) */
+#ui-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Mini harita için temel stil */
+#miniMapCanvas {
+    position: absolute;
+    bottom: 20px; /* Veya top: 20px */
+    right: 20px;  /* Veya left: 20px */
+    width: 200px; /* Mini harita genişliği */
+    height: 200px;/* Mini harita yüksekliği */
+    background-color: rgba(50, 50, 50, 0.7); /* Yarı saydam koyu arka plan */
+    border: 2px solid #fff; /* Beyaz çerçeve */
+    z-index: 101; /* Diğer UI elemanlarının üzerinde olması için */
+}

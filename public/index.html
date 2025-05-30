@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3B Araç Parkuru Simülasyonu</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "../node_modules/three/build/three.module.js",
+            "three/addons/": "../node_modules/three/examples/jsm/",
+            "GLTFLoader": "../node_modules/three/examples/jsm/loaders/GLTFLoader.js",
+            "OrbitControls": "../node_modules/three/examples/jsm/controls/OrbitControls.js",
+            "lil-gui": "../node_modules/three/examples/jsm/libs/lil-gui.module.min.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="infoPanel" style="position: absolute; top: 10px; left: 10px; padding: 10px; background-color: rgba(0,0,0,0.6); color: white; font-family: Arial, sans-serif; border-radius: 5px; z-index: 100;">
+        <p><b>Araç Değiştirme (Klavye):</b></p>
+        <ul>
+            <li><b>1:</b> Alfa Romeo</li>
+            <li><b>2:</b> Kamyon</li>
+            <li><b>3:</b> Motosiklet</li>
+        </ul>
+        <hr style="margin: 10px 0;">
+        <p><b>Araç Seç (Fare):</b></p>
+        <div id="vehicleSelectionButtons" style="margin-top: 5px;">
+            <!-- Düğmeler JavaScript ile buraya eklenecek -->
+        </div>
+        <hr style="margin: 10px 0;">
+        <p><b>Aktif Araç:</b> <span id="activeVehicleName">Yok</span></p>
+        <p id="timerDisplay">Mücadele: P'ye Bas</p>
+        <p id="parkingStatusDisplay"></p>
+        <p id="scoreDisplay">Skor: 0</p> <!-- BU SATIRI EKLEYİN -->
+        <hr style="margin: 10px 0;">
+        <p><b>Kontroller:</b></p>
+        <p>Mücadele Başlat/Bitir: P</p>
+        <p>Park Et: Enter (Mücadele aktifken)</p>
+        <p>Sürüş: WASD / Ok Tuşları</p>
+    </div>
+
+    <canvas id="miniMapCanvas"></canvas> <!-- MİNİ HARİTA İÇİN CANVAS -->
+
+    <script type="module" src="js/main.js"></script> 
+</body>
+</html>
