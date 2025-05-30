@@ -2,7 +2,6 @@
 
 Bu proje, Three.js ile geliştirilmiş bir 3D araç park simülasyonudur. Kullanıcı farklı araçları seçip, engellerle dolu bir sahnede park etme mücadelesine katılabilir. Mini harita, yağmur efekti ve skor sistemi gibi modern özellikler içerir.
 
-![3D Car Park Simulation Ekran Görüntüsü](public/assets/screenshot.png)
 
 ## Özellikler
 - **3D Araçlar:** Alfa Romeo, Büyük Kamyon ve Spor Motosiklet modelleri
